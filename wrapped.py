@@ -10,8 +10,6 @@ top_artists = sp.current_user_top_artists(limit = 50, time_range = "long_term")
 artist_pop = [[i, 0] for i in range(5)]
 track_pop = [[i, 0] for i in range(5)]
 
-temp = 0
-
 tracks = []
 track_pop_sorted = []
 for idx, item in enumerate(top_tracks["items"]):
